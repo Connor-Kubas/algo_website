@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@300&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            font-family: 'Noto Sans Mono', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        html, body {
+            width: 100vw;
+            height: 100vh;
+            overflow-x: hidden;
+        }
+
+        a {
+            /* color: rgb(110, 168, 254); */
+            color: rgb(56, 98, 161);
+        }
+
+        ul {
+            margin-left: 3rem;
+            list-style-type: none;
+        }
+
+        li::before {
+            content: "*";
+            margin-right: 0.4rem;
+            font-weight: bold;
+        }
+
+        ul ul li::before {
+            content: "-";
+            margin-right: 0.4rem;
+            font-weight: bold;
+        }
+
+        .container {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .center-col {
+            width: 50rem;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .contact {
+            width: 100%;
+            margin-bottom: 3rem;
+            margin-top: 1rem;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: space-between;
+        }
+
+
+        .indent {
+            margin-left: 1rem;
+        }
+
+        .mb-1 {
+            margin-bottom: 1rem;
+        }
+        
+        .title {
+            font-weight: bold;
+        }
+
+        .row {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .row-header {
+            height: auto;
+            width: auto;
+            margin-right: 0.2rem;
+        }
+
+        .row-link {
+            text-decoration: none;
+            margin-left: 0.2rem;
+        }
+
+        .filler {
+            flex-grow: 1;
+            border-bottom: 3px dotted grey;
+            margin-top: 0.6rem;
+        }
+
+
+    </style>
+
+
+    <title>Connor's DSA</title>
+  </head>
+  <body>
+
+    <div class="container">
+        <div class="center-col">
+
+            <div class="contact">
+                <div class="contact-info">
+                    <a href="https://github.com/Connor-Kubas/">Github</a>
+                    <a href="https://www.linkedin.com/in/connor-kubas-b1a352261/">LinkedIn</a>
+                </div>
+                <div class="contact-info">
+                    <p>Connor Kubas</p>
+                    <p>connorkubas@gmail.com</p>
+                </div>
+            </div>
+
+            <p style="margin-bottom: 1rem; display: flex; justify-content: center;"><strong>Connor's DSA Website</strong></p>
+
+            <p class="mb-1 title">Purpose</p>
+
+            <p class="indent" style="margin-bottom: 1rem;">This website systematically documents and presents various topics within Data Structures and Algorithms (DSA). It provides detailed information and visual representations for subjects of interest related to DSA. The content covers fundamental problem-solving approaches, optimization methods, and structured data representation, including algorithms like merge sort and data structures like graph representations.</p>
+
+            <!-- For the multi indented topics have - be the ::before -->
+            <!-- The entire row will be clickable -->
+            
+            <!-- <div class="row"><p class="row-header"></p><div class="filler"></div><a href="#" class="row-link">#</a></div> -->
+            <div class="topics mb-1">
+                <p class="title mb-1">Topics</p>
+                <div class="algos">
+                    <p class="title indent">Algorithms</p>
+                    <ul>
+                        <li>Sorting</li>
+                            <ul>
+                                <div class="row"><p class="row-header">Bubble Sort</p><div class="filler"></div><a href="#" class="row-link">#</a></div>
+                                <div class="row"><p class="row-header">Merge Sort</p><div class="filler"></div><a href="#" class="row-link">#</a></div>
+                                <div class="row"><p class="row-header">Quick Sort</p><div class="filler"></div><a href="#" class="row-link">#</a></div>
+                                <div class="row"><p class="row-header">Insertion Sort</p><div class="filler"></div><a href="#" class="row-link">#</a></div>
+                                <div class="row"><p class="row-header">Selection Sort</p><div class="filler"></div><a href="#" class="row-link">#</a></div>
+                            </ul>
+                        <li>Searching</li>
+                            <ul>
+                                <div class="row"><p class="row-header">Binary Searcrh</p><div class="filler"></div><a href="#" class="row-link">#</a></div>
+                                <div class="row"><p class="row-header">A* Search</p><div class="filler"></div><a href="#" class="row-link">#</a></div>
+                                <div class="row"><p class="row-header">KMP Search</p><div class="filler"></div><a href="#" class="row-link">#</a></div>
+                                <div class="row"><p class="row-header">Rabin-Karp Search</p><div class="filler"></div><a href="#" class="row-link">#</a></div>
+                            </ul>
+                        <li>Graph</li>
+                            <ul>
+                                <div class="row"><p class="row-header">Depth-First Search</p><div class="filler"></div><a href="#" class="row-link">#</a></div>
+                                <div class="row"><p class="row-header">Breadth-First Search</p><div class="filler"></div><a href="#" class="row-link">#</a></div>
+                                <div class="row"><p class="row-header">Krustkal's Algorithm</p><div class="filler"></div><a href="#" class="row-link">#</a></div>
+                                <div class="row"><p class="row-header">Prim's Algorithm</p><div class="filler"></div><a href="#" class="row-link">#</a></div>
+                            </ul>
+                        <li>Matrix</li>
+                            <ul>
+                                <div class="row"><p class="row-header">Strassen's Matrix Multiplication</p><div class="filler"></div><a href="#" class="row-link">#</a></div>
+                            </ul>
+                        <li>Shortest Path</li>
+                            <ul>
+                                <div class="row"><p class="row-header">Bellman-Ford Algorithm</p><div class="filler"></div><a href="#" class="row-link">#</a></div>
+                                <div class="row"><p class="row-header">Djikstra's Algorithm</p><div class="filler"></div><a href="#" class="row-link">#</a></div>
+                            </ul>
+                        <li>Dynamic Programming</li>
+                            <ul>
+                                <div class="row"><p class="row-header">Fibonacci Sequence</p><div class="filler"></div><a href="#" class="row-link">#</a></div>
+                                <div class="row"><p class="row-header">Longest Common Subsequence</p><div class="filler"></div><a href="#" class="row-link">#</a></div>
+                                <div class="row"><p class="row-header">Coin Change Problem</p><div class="filler"></div><a href="#" class="row-link">#</a></div>
+                            </ul>
+                    </ul>
+
+                </div>
+                <div class="data-structures">
+                    <p class="title indent">Data Structures</p>
+                    <ul>
+                        <li>Arrays</li>
+                            <ul>
+                                <div class="row"><p class="row-header">Static Arrays</p><div class="filler"></div><a href="#" class="row-link">#</a></div>
+                                <div class="row"><p class="row-header">Dynamic Arrays</p><div class="filler"></div><a href="#" class="row-link">#</a></div>
+                            </ul>
+                        <li>Linked Lists</li>
+                            <ul>
+                                <div class="row"><p class="row-header">Singly Linked Lists</p><div class="filler"></div><a href="#" class="row-link">#</a></div>
+                                <div class="row"><p class="row-header">Doubly Linked Lists</p><div class="filler"></div><a href="#" class="row-link">#</a></div>
+                                <div class="row"><p class="row-header">Circular Linked Lists</p><div class="filler"></div><a href="#" class="row-link">#</a></div>
+                            </ul>
+                        <li>Stacks</li>
+                            <ul>
+                                <div class="row"><p class="row-header">Standard Stack</p><div class="filler"></div><a href="#" class="row-link">#</a></div>
+                                <div class="row"><p class="row-header">Minimum Stack</p><div class="filler"></div><a href="#" class="row-link">#</a></div>
+                                <div class="row"><p class="row-header">Stack with Max</p><div class="filler"></div><a href="#" class="row-link">#</a></div>
+                            </ul>
+                        <li>Queues</li>
+                            <ul>
+                                <div class="row"><p class="row-header">Standard Queue</p><div class="filler"></div><a href="#" class="row-link">#</a></div>
+                                <div class="row"><p class="row-header">Priority Queue</p><div class="filler"></div><a href="#" class="row-link">#</a></div>
+                                <div class="row"><p class="row-header">Circular Queue</p><div class="filler"></div><a href="#" class="row-link">#</a></div>
+                                <div class="row"><p class="row-header">Double-ended Queue</p><div class="filler"></div><a href="#" class="row-link">#</a></div>
+                            </ul>
+                        <li>Trees</li>
+                            <ul>
+                                <div class="row"><p class="row-header">General Trees</p><div class="filler"></div><a href="#" class="row-link">#</a></div>
+                                <div class="row"><p class="row-header">BTree</p><div class="filler"></div><a href="#" class="row-link">#</a></div>
+                            </ul>
+                        <li>Binary Trees</li>
+                            <ul>
+                                <div class="row"><p class="row-header">Full Binary Tree</p><div class="filler"></div><a href="#" class="row-link">#</a></div>
+                                <div class="row"><p class="row-header">Complete Binary Tree</p><div class="filler"></div><a href="#" class="row-link">#</a></div>
+                                <div class="row"><p class="row-header">Perfect Binary Tree</p><div class="filler"></div><a href="#" class="row-link">#</a></div>
+                            </ul>
+                        <li>Binary Search Trees</li>
+                            <ul>
+                                <div class="row"><p class="row-header">AVL Tree</p><div class="filler"></div><a href="#" class="row-link">#</a></div>
+                                <div class="row"><p class="row-header">Red-Black Tree</p><div class="filler"></div><a href="#" class="row-link">#</a></div>
+                                <div class="row"><p class="row-header">Splay Tree</p><div class="filler"></div><a href="#" class="row-link">#</a></div>
+                            </ul>
+                        <li>Heaps</li>
+                            <ul>
+                                <div class="row"><p class="row-header">Min Heap</p><div class="filler"></div><a href="#" class="row-link">#</a></div>
+                                <div class="row"><p class="row-header">Max Heap</p><div class="filler"></div><a href="#" class="row-link">#</a></div>
+                                <div class="row"><p class="row-header">Fibonacci Heap</p><div class="filler"></div><a href="#" class="row-link">#</a></div>
+                            </ul>
+                        <li>Graphs</li>
+                            <ul>
+                                <div class="row"><p class="row-header">Directed Graphs</p><div class="filler"></div><a href="#" class="row-link">#</a></div>
+                                <div class="row"><p class="row-header">Undirected Graphs</p><div class="filler"></div><a href="#" class="row-link">#</a></div>
+                                <div class="row"><p class="row-header">Weighted Graphs</p><div class="filler"></div><a href="#" class="row-link">#</a></div>
+                                <div class="row"><p class="row-header">Bipartite Graphs</p><div class="filler"></div><a href="#" class="row-link">#</a></div>
+                            </ul>
+                        <li>Hash Tables</li>
+                            <ul>
+                                <div class="row"><p class="row-header">Open Addressing</p><div class="filler"></div><a href="#" class="row-link">#</a></div>
+                                <div class="row"><p class="row-header">Closed Addressing (Chaining)</p><div class="filler"></div><a href="#" class="row-link">#</a></div>
+                                <div class="row"><p class="row-header">Double Hashing</p><div class="filler"></div><a href="#" class="row-link">#</a></div>
+                            </ul>
+                        <li>Hash Maps</li>
+                            <ul>
+                                <div class="row"><p class="row-header">Separate Chaining</p><div class="filler"></div><a href="#" class="row-link">#</a></div>
+                                <div class="row"><p class="row-header">Linear Probing</p><div class="filler"></div><a href="#" class="row-link">#</a></div>
+                            </ul>
+                        <li>Set</li>
+                            <ul>
+                                <div class="row"><p class="row-header">Union</p><div class="filler"></div><a href="#" class="row-link">#</a></div>
+                                <div class="row"><p class="row-header">Intersection</p><div class="filler"></div><a href="#" class="row-link">#</a></div>
+                                <div class="row"><p class="row-header">Difference</p><div class="filler"></div><a href="#" class="row-link">#</a></div>
+                            </ul>
+                        <li>Priority Queue</li>
+                            <ul>
+                                <div class="row"><p class="row-header">Binary Heap Implementation</p><div class="filler"></div><a href="#" class="row-link">#</a></div>
+                                <div class="row"><p class="row-header">Fibonacci Heap Implementation</p><div class="filler"></div><a href="#" class="row-link">#</a></div>
+                            </ul>
+                        <li>Trie</li>
+                            <ul>
+                                <div class="row"><p class="row-header">Prefix Tree</p><div class="filler"></div><a href="#" class="row-link">#</a></div>
+                            </ul>
+                        <li>Disjoint Set (Union-Find)</li>
+                            <ul>
+                                <div class="row"><p class="row-header">Union-Find with Path Compression</p><div class="filler"></div><a href="#" class="row-link">#</a></div>
+                                <div class="row"><p class="row-header">Union-Find with Union by Rank</p><div class="filler"></div><a href="#" class="row-link">#</a></div>
+                            </ul>
+                        <li>Circular Buffer</li>
+                            <ul>
+                                <div class="row"><p class="row-header">Fixed-Size Circular Buffer</p><div class="filler"></div><a href="#" class="row-link">#</a></div>
+                                <div class="row"><p class="row-header">Dynamic Circular Buffer</p><div class="filler"></div><a href="#" class="row-link">#</a></div>
+                            </ul>
+                        <li>Linked Hash Map</li>
+                            <ul>
+                                <div class="row"><p class="row-header">Implementation of a Hash Map using Linked Lists</p><div class="filler"></div><a href="#" class="row-link">#</a></div>
+                            </ul>
+                        <li>Skip List</li>
+                            <ul>
+                                <div class="row"><p class="row-header">Basic Skip List</p><div class="filler"></div><a href="#" class="row-link">#</a></div>
+                                <div class="row"><p class="row-header">Probabilistic Skip List</p><div class="filler"></div><a href="#" class="row-link">#</a></div>
+                            </ul>
+                        <li>Double-ended Queue</li>
+                            <ul>
+                                <div class="row"><p class="row-header">Insertion</p><div class="filler"></div><a href="#" class="row-link">#</a></div>
+                            </ul>
+                    </ul>
+
+                </div>
+            </div>
+
+            <!-- <ul class="indent">
+                <li><a href="/binary-search">Binary Search</a></li>
+                <li><a href="/merge-sort">Merge Sort</a></li>
+                <li><a href="/adjacency-matrices">Adjacency Matricies</a></li>
+            </ul> -->
+        </div>
+    </div>
+  </body>
+</html>
